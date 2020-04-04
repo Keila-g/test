@@ -76,7 +76,7 @@ public class Main {
 						  j = j-1;
 					  }else
 					  {
-						  System.out.println("Choose another direction...");
+						 direction();// System.out.println("Choose another direction...");
 					  }
 		
 			}else
@@ -91,7 +91,7 @@ public class Main {
 			System.out.println("it has been moved ");
 			}else
 				{
-					System.out.println("Choose another direction....\n\n");
+					direction();//System.out.println("Choose another direction....\n\n");
 				}
 			
 		}else if (direction == 'w')
@@ -103,7 +103,7 @@ public class Main {
 			a[i][j] = temp;
 			i = i-1;
 			}else
-				System.out.println("Choose another direction....\n\n");
+				direction();//System.out.println("Choose another direction....\n\n");
 			
 		}else if(direction == 's')
 		{
@@ -114,12 +114,17 @@ public class Main {
 			a[i][j] = temp;
 			i = i+1;
 			}else
-				System.out.println("Choose another direction....\n\n");
+				direction();//System.out.println("Choose another direction....\n\n");
 		}
 	
 	drawBoard(a);
 		 }//end of the while loop
 		 }//end of the moveTileawsd function
+	
+	public static void direction()
+	{
+		System.out.println("Choose another direction....\n");
+	}
 
 	
 }
